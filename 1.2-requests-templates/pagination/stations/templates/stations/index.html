@@ -31,13 +31,20 @@
             </tr>
             </thead>
             <tbody>
-            {% for station in bus_stations %}
+            {% for e in page %}
                 <tr>
-                    <td>{{ station.Name }}</td>
-                    <td>{{ station.Street }}</td>
-                    <td>{{ station.District }}</td>
+                        <td>{{ e.Name }}</td>
+                        <td>{{ e.Street }}</td>
+                        <td>{{ e.District }}</td>
                 </tr>
             {% endfor %}
+<!--            {% for station in bus_stations %}-->
+<!--                    <tr>-->
+<!--                        <td>{{ station.Name }}</td>-->
+<!--                        <td>{{ station.Street }}</td>-->
+<!--                        <td>{{ station.District }}</td>-->
+<!--                    </tr>-->
+<!--            {% endfor %}-->
             </tbody>
         </table>
 
